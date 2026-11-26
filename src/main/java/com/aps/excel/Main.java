@@ -15,7 +15,7 @@ public class Main {
         ExcelService excelService = new ExcelServiceImpl();
         JsonService jsonService = new JsonServiceImpl();
 
-        List<StudentDTO> studentList = excelService.readExcel("/Users/mac/Downloads/excel_transform.xlsx");
+        List<StudentDTO> studentList = excelService.readExcel("src/main/java/com/aps/excel/resources/excel_transform.xlsx");
         System.out.println("danh sach sinh vien JSON: ");
         System.out.println(jsonService.transformJson(studentList));
     }
